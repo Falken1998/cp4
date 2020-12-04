@@ -30,10 +30,8 @@ const Item = mongoose.model(
     title: String,
     description: String,
     price: Number,
-    user: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-    },
+    user_name: String,
+    user_email: String,
     path: String,
   })
 )
